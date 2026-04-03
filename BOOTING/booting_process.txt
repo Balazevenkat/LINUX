@@ -1,0 +1,44 @@
+
+
+“Booting sequence is the process that starts when the system is powered on.
+In hardware booting, the system begins from a complete shutdown, and in soft booting, the reboot starts from software but the sequence is almost the same.
+
+First, the system goes to BIOS or UEFI. BIOS/UEFI performs POST (Power-On Self Test) to check CPU, RAM, keyboard, and basic hardware.
+If any issue occurs, it shows an error message or beep codes.
+
+After POST, BIOS/UEFI identifies the bootable device and loads the bootloader (GRUB) from the disk.
+
+The bootloader then loads the Linux kernel and initramfs into RAM.
+The kernel initializes hardware, drivers, memory, and mounts the root filesystem.
+
+Finally, the kernel starts systemd (PID 1), which launches all services and the graphical/user interface.”
+
+
+Correct flow:
+
+Power ON → BIOS/UEFI → POST → GRUB → Kernel → initramfs → systemd → GUI
+
+The PC is turned on & the BIOS initializes the hardware.
+BIOS
+|
+MBR
+The BIOS calls code stored in the MBR at the start of disk 0.
+|
+The MBR loads code from the bootsector of the active partition.
+Active Partition
+|
+
+
+[MBR
+Master Boot Record executes GRUB
+GRUB
+Grand Unified Bootloader executes Kernel
+thegeekstuff.com
+Kernel
+Kernel executes /sbin/init
+Init
+Init executes runlevel programs
+Runlevel
+Runlevel programs are executed from /etc/rc.d/rc*.d/]
+Bootloader
+The bootsector loads & runs the bootloader from its filesystem.
