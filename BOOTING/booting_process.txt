@@ -1,4 +1,10 @@
+P B G K I L
+Power → BIOS/UEFI → GRUB → Kernel → Initramfs(Initial RAM File System) → Login/systemd
+________________________________________________________________________
 
+ it uses a built-in mechanism to load the operating system from secondary storage into the main memory (RAM). This process is essential because the OS must be present in RAM to manage hardware and software operations. This entire operation of loading the OS into memory is known as the booting process.
+
+________________________________________________________________________
 
 “Booting sequence is the process that starts when the system is powered on.
 In hardware booting, the system begins from a complete shutdown, and in soft booting, the reboot starts from software but the sequence is almost the same.
