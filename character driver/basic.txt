@@ -1,0 +1,15 @@
+Hardware cannot understand high-level OS commands
+OS cannot directly access hardware registers
+Device driver sits in between
+It converts OS/app requests → hardware actions
+
+
+What is a character driver?
+
+"A character device driver allows user applications to read/write data to hardware or kernel memory one byte at a time using file-like operations (open, read, write)."
+
+**************************************************************
+
+in my character driver project, I understood how a device interacts at a low level. Low-level means the driver code talks directly to hardware, while user-level applications interact through system calls.
+In a basic character driver, we only read/write to a kernel buffer for practice. But in real hardware drivers, the same read/write functions write directly to hardware registers.
+This helped me understand that the driver sits between user space and hardware, translating high-level user commands into low-level hardware actions.
