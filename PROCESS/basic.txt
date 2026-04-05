@@ -1,0 +1,2 @@
+Concurrent Execution: After the call, both processes continue execution from the exact same point—the instruction immediately following the fork() call. They run independently and concurrently.
+Memory Management (Copy-on-Write): To optimize performance, modern systems often use "Copy-on-Write" (COW). Instead of copying all memory immediately, the parent and child share the same physical memory until one of them tries to modify it, at which point a separate copy is made.
