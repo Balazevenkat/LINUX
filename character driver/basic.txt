@@ -13,3 +13,27 @@ What is a character driver?
 in my character driver project, I understood how a device interacts at a low level. Low-level means the driver code talks directly to hardware, while user-level applications interact through system calls.
 In a basic character driver, we only read/write to a kernel buffer for practice. But in real hardware drivers, the same read/write functions write directly to hardware registers.
 This helped me understand that the driver sits between user space and hardware, translating high-level user commands into low-level hardware actions.
+
+
+Your Key Points (checked and corrected)
+✔ 1. Character driver teaches low-level interaction → Correct
+✔ 2. Driver converts user-level calls to hardware actions → Correct
+✔ 3. Kernel buffer is only for learning → Correct
+✔ 4. Real drivers access hardware registers → Correct
+✔ 5. Driver sits between user space and hardware → Correct
+✔ 6. Driver provides low-level language understood by hardware → Correct
+✔ 7. OS/user commands are high-level → Correct
+
+
+*******************************************************************
+
+
+What is a Char Device and Char Driver?
+There are mainly three categories of devices. If you look at the image above, you’ll see char and block devices. Wait, that’s only two? That’s because the third type can be accessed through /proc/net or /sys/class/net.
+
+Press enter or click to view image in full size
+
+In block devices, the data is organized in fixed-sized chunks, as the name suggests. Network devices handle data packets. But today’s focus is on character devices, which manage data sequentially, byte by byte, and are typically slow. Examples include keyboards, serial ports, joysticks, etc.
+
+Major and Minor Device Numbers
+All devices are tagged with an identifier. It consists of two parts: major and minor numbers. The first part identifies the device type (serial port, IDE hard drives, SCSI disks, etc.). The lower numbers might be fixed to standard assignments, but many drivers in newer kernels allocate major numbers dynamically to (you guessed it) avoid collisions. The second part is the minor number, which identifies the exact device (like the second disk, etc.).
