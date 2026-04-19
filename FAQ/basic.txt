@@ -1,0 +1,17 @@
+1. What is OS and Why OS?
+
+“An Operating System (OS) is system software that acts as an interface between the user and hardware.
+It manages resources like CPU, memory, files, and devices, and allows programs to run efficiently.”
+
+👉 Why OS?
+“To manage hardware resources, provide a user interface, and ensure efficient and safe execution of programs.”
+
+2. Why Linux over other OS?
+
+“Linux is preferred because it is open-source, secure, stable, and highly customizable.
+It offers better performance and control, especially in servers, embedded systems, and development environments.”
+
+3. List Linux Distributions
+
+“Linux distributions are different versions of Linux with customized tools and environments.
+Examples include Ubuntu, Fedora, Debian, CentOS, Red Hat, Arch Linux, and Kali Linux.”
