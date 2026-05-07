@@ -11,3 +11,4 @@ int main(){
     printf("set with alarm of 5 sec\n");
     pause();//wait for the alarm
 }
+
