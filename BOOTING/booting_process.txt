@@ -1,3 +1,4 @@
+
 P B G K I L
 Power → BIOS/UEFI → GRUB → Kernel → Initramfs(Initial RAM File System) → Login/systemd
 ________________________________________________________________________
