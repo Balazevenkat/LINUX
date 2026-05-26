@@ -1,3 +1,4 @@
+
 1. What is OS and Why OS?
 
 “An Operating System (OS) is system software that acts as an interface between the user and hardware.
