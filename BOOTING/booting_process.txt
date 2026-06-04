@@ -23,6 +23,7 @@ Finally, the kernel starts systemd (PID 1), which launches all services and the 
 
 Correct flow:
 
+
 Power ON → BIOS/UEFI → POST → GRUB → Kernel → initramfs → systemd → GUI
 
 The PC is turned on & the BIOS initializes the hardware.
