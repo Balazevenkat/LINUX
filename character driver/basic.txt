@@ -1,3 +1,4 @@
+
 Hardware cannot understand high-level OS commands
 OS cannot directly access hardware registers
 Device driver sits in between
