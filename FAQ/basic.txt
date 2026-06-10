@@ -4,6 +4,7 @@
 “An Operating System (OS) is system software that acts as an interface between the user and hardware.
 It manages resources like CPU, memory, files, and devices, and allows programs to run efficiently.”
 
+
 👉 Why OS?
 “To manage hardware resources, provide a user interface, and ensure efficient and safe execution of programs.”
 
