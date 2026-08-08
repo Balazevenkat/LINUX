@@ -9,7 +9,7 @@ int main(){
     printf("I am in Main\n");
     signal(SIGALRM,handler);
     alarm(5);
-    printf("set with alarm of 5 sec\n");
+   printf("set with alaram 5se\n");
     pause();//wait for the alarm
 }
 
